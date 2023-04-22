@@ -1,0 +1,8 @@
+version: '3'
+services:
+  server:
+    image: gcc:latest
+    volumes:
+      - ./src:/home/idz-2
+    working_dir: /home/idz-2
+    command: tail -f /dev/null
